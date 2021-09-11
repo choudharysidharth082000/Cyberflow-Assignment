@@ -1,0 +1,25 @@
+{
+  "name": "tiso-re-user-backend",
+  "version": "1.0.0",
+  "description": "User Backend Tiso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "author": "Sidharth Choudhary",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.3.0",
+    "bcrypt": "^5.0.1",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "joi": "^14.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.2",
+    "nodemon": "^2.0.12"
+  }
+}
