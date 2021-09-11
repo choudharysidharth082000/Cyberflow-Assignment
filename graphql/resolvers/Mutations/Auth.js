@@ -41,6 +41,8 @@ module.exports =
                 const adminEmail = await Admin.findOne({email : adminData.email});
                 
 
+                
+
                 if(adminEmail)
                 {
                     throw new Error('User already Exists');
@@ -56,14 +58,13 @@ module.exports =
             try 
             {
                 const admin = await  new Admin(adminData);
+                
 
                 if(!admin)
                 {
                     throw new Error(`Something went Wrong`);
                 }
 
-                else 
-                {
                     admin.save();
 
                     return {
@@ -71,7 +72,7 @@ module.exports =
                         message: "Used Signed up Successfully",
                         admin: admin,
                         accessToken: newJWT
-                    }
+                    
                 }
 
                 
